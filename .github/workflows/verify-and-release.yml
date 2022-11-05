@@ -1,0 +1,12 @@
+name: 'Release'
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  release:
+    uses: muratcorlu/mastodon-elements/.github/workflows/release.yml@develop
+    secrets: inherit
